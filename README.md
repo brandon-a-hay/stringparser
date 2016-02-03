@@ -7,6 +7,11 @@ Clone the repository:
 ```
 git clone https://github.com/brandon-a-hay/stringparser.git
 cd stringparser
+```
+
+Install node packages
+
+```
 npm install
 ```
 
