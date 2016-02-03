@@ -1,0 +1,16 @@
+<div class="container">
+  <h1>Results</h1>
+  <div class="row">
+    <div class="card-list-item col-md-4 col-sm-6" ng-repeat="item in vm.items">
+      <div class="card">
+        <div class="image-container">
+          <img id="img" ng-src="{{item.OSS.Image}}">
+        </div>
+        <div class="card-info">
+          <p id="item-name">{{item.OSS.Name}}</p>
+          <p>from {{item.OSS.Company}}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

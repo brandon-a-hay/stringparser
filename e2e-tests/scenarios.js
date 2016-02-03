@@ -5,20 +5,20 @@
 describe('my app', function() {
 
 
-  it('should automatically redirect to /view1 when location hash/fragment is empty', function() {
+  it('should automatically redirect to /stringParser when location hash/fragment is empty', function() {
     browser.get('index.html');
-    expect(browser.getLocationAbsUrl()).toMatch("/view1");
+    expect(browser.getLocationAbsUrl()).toMatch("/stringParser");
   });
 
 
-  describe('view1', function() {
+  describe('stringParser', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view1');
+      browser.get('index.html#/stringParser');
     });
 
 
-    it('should render view1 when user navigates to /view1', function() {
+    it('should render stringParser when user navigates to /stringParser', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 1/);
     });
@@ -26,14 +26,14 @@ describe('my app', function() {
   });
 
 
-  describe('view2', function() {
+  describe('frontEnd', function() {
 
     beforeEach(function() {
-      browser.get('index.html#/view2');
+      browser.get('index.html#/frontEnd');
     });
 
 
-    it('should render view2 when user navigates to /view2', function() {
+    it('should render frontEnd when user navigates to /frontEnd', function() {
       expect(element.all(by.css('[ng-view] p')).first().getText()).
         toMatch(/partial for view 2/);
     });

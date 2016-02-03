@@ -1,5 +1,9 @@
 /* app css stylesheet */
 
+body {
+  background-color: #f8f8f8 !important;
+}
+
 .menu {
   list-style: none;
   border-bottom: 0.1em solid black;
@@ -27,4 +31,44 @@
 .menu > li:nth-child(1):before {
   content: "";
   padding: 0;
+}
+
+.card {
+  background-color: #fff;
+  margin-bottom: 30px;
+  border-bottom: 1px solid rgba(0,0,0,0.1);
+  padding: 15;
+}
+
+#img {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.card-info {
+  padding: 10.000001px;
+  position: relative;
+}
+
+.card-list-item {
+  min-width: 200px;
+  max-width: 200px;
+}
+
+/* truncate item names if they're too long */
+#item-name {
+  width: 150px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.image-container {
+  height: 150px;
+  text-align: center;
+  position: relative;
 }

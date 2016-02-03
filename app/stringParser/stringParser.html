@@ -1,0 +1,19 @@
+<div class="container">
+  <h1>String Parser</h1>
+  <p>Enter your string here and click submit to see which characters are most/least frequent.</p>
+  <form>
+    <div class="form-group">
+      <input type="text" class="form-control input-lg" ng-model="vm.string">
+    </div>
+    <div class="form-group">
+      Case sensitive?
+      <input type="checkbox" ng-model="vm.caseSensitive">
+    </div>
+    <button class="btn btn-primary" ng-click="vm.getFrequency()">Submit</button>
+    <br>
+    most frequent: <p class="lead">{{ vm.mostFrequentChar }}</p>
+    <br>
+    least frequent: <p class="lead">{{ vm.leastFrequentChar }}</p>
+
+  </form>
+</div>
