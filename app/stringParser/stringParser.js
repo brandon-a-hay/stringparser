@@ -52,7 +52,8 @@ function stringParserCtrl () {
     }
     return occurences;
   };
-
+  
+  // gets the least and most frequent characters in the string
   StringParser.prototype.getFrequency = function (str) {
     var i = 0;
     var characterCounts = {};
