@@ -32,9 +32,9 @@ npm start
 
 Now browse to the app at `http://localhost:8000/app/`.
 
-### String Parser class
+# String Parser class
 
-# properties
+### Properties
 
 string - The string to be parsed.
 
@@ -44,7 +44,7 @@ mostFrequentChar - The most frequent character that occurs in the string.
 
 leastFrequentChar - The least frequent character that occurs in the string.
 
-# methods
+### Methods
 
 StringParser.prototype.givenOccurences - returns an integer representing the number of times a character appears in a string
 
@@ -52,4 +52,4 @@ StringParser.prototype.getFrequency - gets the most and least frequent character
 
 The string parser class can be found at app/stringParser/stringParser.js. It is designed to take an input string and return the most and least frequent character in that string.
 
-You can also call it's methods using StringParser.prototype
+You can also call it's methods using StringParser.prototype.method()
